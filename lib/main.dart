@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
 
+  List tags = ['Viagens', 'Urbano', 'Fashion', 'Lifestyle', 'Edição','Tecnologia', 'Entretenimento'];
+
   
 
   @override
@@ -129,6 +131,31 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
           )
+          //tags section
+          ,
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, top: 8.0),
+            child: Container(
+              height: 44,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: tags.length,
+                itemBuilder: (BuildContext context, int index){
+                  return Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(33),
+                      border: Border.all(color: Colors.white12)
+                    ),
+                    margin: EdgeInsets.only(right: 13),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 13.0, bottom: 5, right: 20, left: 20),
+                      child: Text(tags[index], style: TextStyle(color: Colors.white),),
+                    ),
+                  );
+                })
+            ),
+          ),
+
         ],
       ),
     );
