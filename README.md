@@ -13,7 +13,7 @@ Foto Media
 </p>
 
 <div align="center">
-  <img align="center" src="https://github.com/Marlon-Paulo-da-Silva/FotoMedia-Flutter/blob/master/fotomedia.png" alt="demo" height="425">
+  <img align="center" src="https://github.com/Marlon-Paulo-da-Silva/FotoMedia-Flutter-App/blob/master/fotomedia.png" alt="demo" height="425">
   
 
 </div>
